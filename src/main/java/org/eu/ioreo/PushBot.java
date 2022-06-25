@@ -145,7 +145,7 @@ public class PushBot extends TelegramLongPollingSessionBot {
                 System.out.print("Command /start");
                 SendMessage sendMessage = SendMessage.builder()
                 .chatId(update.getMessage().getChatId())
-                .text("欢迎为 UniOreoX Channel 投稿\n本机器人支持使用<a href=\"https://core.telegram.org/bots/api#html-style\">HTML语法</a>投稿\n所以请尽量避免多次使用与HTML有关符号，如操作后机器人未回复，请检查投稿内容中的符号，并在特殊符号前加入反斜杠\\重试\n\n\n请现在发送您的投稿内容的标题（<b>仅标签</b>）\n投稿内容在审核过后将会被推送到 UniOreoX Channel 我们将注明您的名字")
+                .text("欢迎为 UniOreoX Channel 投稿\n本机器人支持使用<a href=\"https://core.telegram.org/bots/api#html-style\">HTML语法</a>投稿\n所以请尽量避免多次使用与HTML有关符号，如操作后机器人未回复，请检查投稿内容中的符号，并在特殊符号前加入反斜杠\\重试\n\n\n请现在发送您的投稿内容的标题（<b>仅标题</b>）\n投稿内容在审核过后将会被推送到 UniOreoX Channel 我们将注明您的名字")
                 .disableNotification(false)
                 .parseMode(ParseMode.HTML)
                 .disableWebPagePreview(true)
