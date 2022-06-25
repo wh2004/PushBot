@@ -20,6 +20,15 @@ import org.telegram.telegrambots.session.TelegramLongPollingSessionBot;
 
 public class PushBot extends TelegramLongPollingSessionBot {
 
+    /***    
+     * 欢迎使用UniOreo Telegram Push Bot
+     * 本Bot用于推送消息到任意多频道或多群组的Telegram聊天窗口 
+     * 频道推送前请给予管理员权限
+     * 
+     * By UniOreoX
+     * 
+     */
+
     private static List<String> checkerIDs = new ArrayList<>(); //配置管理员ID
     private static List<String> pushToIDs = new ArrayList<>(); //配置频道ID
     private static String botToken = ""; //配置botToken
